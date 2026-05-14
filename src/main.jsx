@@ -2,6 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Gauge, Wrench, Droplets, ShieldCheck, Phone, Mail, MapPin, ArrowRight, CheckCircle2, Settings, Zap, Menu } from 'lucide-react';
 import './styles.css';
+import AssistantWidget from './AssistantWidget.jsx';
 import logo from './max-diesel-client-image.jpg';
 
 const services = [
@@ -14,7 +15,8 @@ const services = [
 const signs = ['Hard starting', 'Black or white smoke', 'Rough idle', 'Loss of power', 'High fuel consumption', 'Diesel knocking', 'Injector warning codes', 'Uneven running'];
 const whatsappNumber = '27727494437';
 const whatsappMessage = encodeURIComponent('Hi Max Diesel, I would like to book or enquire about diesel injector/pump repairs.');
-const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+const whatsappUrlBase = `https://wa.me/${whatsappNumber}`;
+const whatsappUrl = `${whatsappUrlBase}?text=${whatsappMessage}`;
 
 function App(){return <>
   <header className="nav">
@@ -65,6 +67,7 @@ function App(){return <>
     </section>
   </main>
   <footer><b>Max Diesel Fuel Injector Specialist</b><span>Demo based on public Facebook page: facebook.com/556718934202583</span></footer>
+  <AssistantWidget whatsappUrlBase={whatsappUrlBase}/>
 </>}
 
 createRoot(document.getElementById('root')).render(<App/>);
