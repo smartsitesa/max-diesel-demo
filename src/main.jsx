@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Gauge, Wrench, Droplets, ShieldCheck, Phone, Mail, MapPin, ArrowRight, CheckCircle2, Settings, Zap, Menu } from 'lucide-react';
 import './styles.css';
-import logo from './max-diesel-logo-hq.jpg';
+import logo from './max-diesel-client-image.jpg';
 
 const services = [
   { icon: Gauge, title: 'Injector Testing', text: 'Bench-style diagnostic positioning for flow, spray pattern, leakage and performance checks.' },
@@ -27,7 +27,7 @@ function App(){return <>
         <h1>Precision diesel injector testing, cleaning & repairs.</h1>
         <p className="lead">A corrected demo concept for <strong>Max Diesel Fuel Injector Specialist</strong>, based on the Facebook page you sent. Focused on diesel pump repairs, fuel injector recon, vehicles and earth-moving equipment.</p>
         <div className="actions"><a className="primary" href="#contact">Request service <ArrowRight size={18}/></a><a className="secondary" href="https://www.facebook.com/556718934202583" target="_blank" rel="noreferrer">Facebook page</a></div>
-        <p className="note">Research note: Facebook exposed a higher-res promo graphic with diesel pump repairs, injector recon services, and phone number +27 72 749 4437.</p>
+        <p className="note">Research note: updated with the higher-quality image supplied directly by Charl; phone number +27 72 749 4437 kept from the public promo graphic.</p>
       </div>
       <div className="heroVisual">
         <div className="promoImage"><img src={logo} alt="Max Diesel Fuel Injector Specialist diesel pump and injector repair advert"/></div>

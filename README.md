@@ -6,7 +6,7 @@ Corrected demo repo based on the Facebook page Charl supplied:
 - Public embed canonical page link found: `https://www.facebook.com/556718934202583`
 - Page name found: **Max Diesel Fuel Injector Specialist**
 - Followers shown by public embed: **108 followers**
-- Higher-resolution Facebook image found via Graph picture endpoint (960px): black/navy, white text, yellow/gold accents, technical automotive style.
+- Higher-quality image supplied by Charl (1280×853): black/navy, white text, yellow/gold accents, technical automotive style.
 
 ## Research limitations
 
@@ -34,3 +34,7 @@ npm run build
 - Confirm exact services: common rail, pump repairs, injector coding, ultrasonic cleaning, test bench reports, etc.
 - Better logo/photo assets
 - Before/after workshop photos
+
+## Latest asset update
+
+Charl supplied a 1280×853 image on Telegram. Site now uses `src/max-diesel-client-image.jpg` as the main visual instead of the lower-quality Facebook Graph asset.
