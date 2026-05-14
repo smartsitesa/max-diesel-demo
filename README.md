@@ -1,13 +1,18 @@
-# Maxfual Demo Site
+# Max Diesel Fuel Injector Specialist Demo Site
 
-Demo repo for potential client `maxfual.co.za`.
+Corrected demo repo based on the Facebook page Charl supplied:
 
-## Research notes
+- Facebook profile URL supplied: `https://www.facebook.com/profile.php?id=61575708352679`
+- Public embed canonical page link found: `https://www.facebook.com/556718934202583`
+- Page name found: **Max Diesel Fuel Injector Specialist**
+- Followers shown by public embed: **108 followers**
+- Profile image/logo colors: black/navy, white text, yellow/gold accents, technical automotive style.
 
-- `maxfual.co.za` and `www.maxfual.co.za` did **not** resolve via DNS during research, so no live site assets could be pulled from that domain.
-- Public search found a South African `MAXFUAL` company listing: company number `B2008155967`, address snippet `677 Wainwright Street, Moreleta Park, 0044`.
-- Public fuel-management references around similarly named MaxiFuel/Maxi Control use a deep navy / teal / white tech palette and focus on fuel protection, management, electronics/software, agriculture, fuel and transport sectors.
-- This demo therefore uses conservative, replaceable copy: fuel control, theft prevention, tank/pump monitoring, bulk fuel/on-site refuelling, fleet analytics.
+## Research limitations
+
+Facebook's public page fetch blocked normal scraping. The Facebook page plugin exposed only name, follower count and the profile image. No reliable phone, WhatsApp, physical address, trading hours or exact service list was visible from public unauthenticated access.
+
+The site copy is therefore positioned carefully around diesel injector testing, cleaning, repairs and diagnostics, and marks contact details as needing confirmation.
 
 ## Run
 
@@ -22,10 +27,10 @@ npm run dev
 npm run build
 ```
 
-## Next client inputs needed
+## Needed from client
 
-- Confirm exact company identity: Maxfual vs MaxiFuel vs another brand.
-- Logo / brand guide / photos.
-- Phone, WhatsApp, email, address.
-- Services they actually sell.
-- Whether `maxfual.co.za` needs DNS/hosting setup.
+- Confirm phone/WhatsApp number
+- Confirm location/service area
+- Confirm exact services: common rail, pump repairs, injector coding, ultrasonic cleaning, test bench reports, etc.
+- Better logo/photo assets
+- Before/after workshop photos
