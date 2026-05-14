@@ -2,7 +2,6 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Gauge, Wrench, Droplets, ShieldCheck, Phone, Mail, MapPin, ArrowRight, CheckCircle2, Settings, Zap, Menu } from 'lucide-react';
 import './styles.css';
-import AssistantWidget from './AssistantWidget.jsx';
 import logo from './max-diesel-client-image.jpg';
 
 const services = [
@@ -67,7 +66,6 @@ function App(){return <>
     </section>
   </main>
   <footer><b>Max Diesel Fuel Injector Specialist</b><span>Demo based on public Facebook page: facebook.com/556718934202583</span></footer>
-  <AssistantWidget whatsappUrlBase={whatsappUrlBase}/>
 </>}
 
 createRoot(document.getElementById('root')).render(<App/>);
