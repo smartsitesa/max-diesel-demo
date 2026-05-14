@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Gauge, Wrench, Droplets, ShieldCheck, Phone, Mail, MapPin, ArrowRight, CheckCircle2, Settings, Zap, Menu } from 'lucide-react';
 import './styles.css';
-import logo from './max-diesel-logo.jpg';
+import logo from './max-diesel-logo-hq.jpg';
 
 const services = [
   { icon: Gauge, title: 'Injector Testing', text: 'Bench-style diagnostic positioning for flow, spray pattern, leakage and performance checks.' },
@@ -25,12 +25,12 @@ function App(){return <>
       <div className="heroText">
         <p className="eyebrow"><span></span>Diesel injector specialists</p>
         <h1>Precision diesel injector testing, cleaning & repairs.</h1>
-        <p className="lead">A corrected demo concept for <strong>Max Diesel Fuel Injector Specialist</strong>, based on the Facebook page you sent. Strong mechanic/industrial look, black/navy base, white text and yellow/gold accents.</p>
+        <p className="lead">A corrected demo concept for <strong>Max Diesel Fuel Injector Specialist</strong>, based on the Facebook page you sent. Focused on diesel pump repairs, fuel injector recon, vehicles and earth-moving equipment.</p>
         <div className="actions"><a className="primary" href="#contact">Request service <ArrowRight size={18}/></a><a className="secondary" href="https://www.facebook.com/556718934202583" target="_blank" rel="noreferrer">Facebook page</a></div>
-        <p className="note">Research note: Facebook public embed exposed the page name, profile image and follower count only; contact details/services still need confirmation.</p>
+        <p className="note">Research note: Facebook exposed a higher-res promo graphic with diesel pump repairs, injector recon services, and phone number +27 72 749 4437.</p>
       </div>
       <div className="heroVisual">
-        <div className="badge"><img src={logo} alt="Max Diesel Fuel Injector Specialist"/></div>
+        <div className="promoImage"><img src={logo} alt="Max Diesel Fuel Injector Specialist diesel pump and injector repair advert"/></div>
         <div className="machineCard">
           <div className="scan"><Zap/><span>Injector diagnostic report</span></div>
           <div className="bars"><i style={{height:'82%'}}></i><i style={{height:'68%'}}></i><i style={{height:'91%'}}></i><i style={{height:'74%'}}></i></div>
@@ -57,7 +57,7 @@ function App(){return <>
     </section>
 
     <section id="contact" className="contact">
-      <div><p className="eyebrow"><span></span>Contact demo</p><h2>Turn Facebook visitors into quote requests.</h2><p>Once they confirm phone/WhatsApp/location, this section becomes the main conversion area.</p><ul><li><Phone/> WhatsApp / phone to confirm</li><li><Mail/> Email to confirm</li><li><MapPin/> Location to confirm</li></ul></div>
+      <div><p className="eyebrow"><span></span>Contact demo</p><h2>Turn Facebook visitors into quote requests.</h2><p>Phone number pulled from the public Facebook promotional graphic. Location and trading hours still need confirmation.</p><ul><li><Phone/> +27 72 749 4437</li><li><Mail/> Email to confirm</li><li><MapPin/> Location to confirm</li></ul></div>
       <form onSubmit={e=>e.preventDefault()}><input placeholder="Name"/><input placeholder="Phone / WhatsApp"/><input placeholder="Vehicle / engine"/><select defaultValue=""><option value="" disabled>Problem type</option><option>Injector testing</option><option>Injector cleaning</option><option>Injector repair</option><option>Diesel diagnostic</option></select><textarea placeholder="Describe the symptoms"></textarea><button>Send enquiry</button></form>
     </section>
   </main>
