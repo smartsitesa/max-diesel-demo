@@ -12,12 +12,15 @@ const services = [
 ];
 
 const signs = ['Hard starting', 'Black or white smoke', 'Rough idle', 'Loss of power', 'High fuel consumption', 'Diesel knocking', 'Injector warning codes', 'Uneven running'];
+const whatsappNumber = '27727494437';
+const whatsappMessage = encodeURIComponent('Hi Max Diesel, I would like to book or enquire about diesel injector/pump repairs.');
+const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
 function App(){return <>
   <header className="nav">
     <a className="brand" href="#top"><img src={logo} alt="Max Diesel logo"/><span>Max Diesel <b>Fuel Injector Specialist</b></span></a>
     <nav><a href="#services">Services</a><a href="#symptoms">Symptoms</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
-    <a className="navCta" href="#contact">Get quote</a><button className="menu" aria-label="Menu"><Menu/></button>
+    <a className="navCta" href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp quote</a><button className="menu" aria-label="Menu"><Menu/></button>
   </header>
 
   <main id="top">
@@ -26,7 +29,7 @@ function App(){return <>
         <p className="eyebrow"><span></span>Diesel injector specialists</p>
         <h1>Precision diesel injector testing, cleaning & repairs.</h1>
         <p className="lead">A corrected demo concept for <strong>Max Diesel Fuel Injector Specialist</strong>, based on the Facebook page you sent. Focused on diesel pump repairs, fuel injector recon, vehicles and earth-moving equipment.</p>
-        <div className="actions"><a className="primary" href="#contact">Request service <ArrowRight size={18}/></a><a className="secondary" href="https://www.facebook.com/556718934202583" target="_blank" rel="noreferrer">Facebook page</a></div>
+        <div className="actions"><a className="primary" href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp now <ArrowRight size={18}/></a><a className="secondary" href="https://www.facebook.com/556718934202583" target="_blank" rel="noreferrer">Facebook page</a></div>
         <p className="note">Research note: updated with the higher-quality image supplied directly by Charl; phone number +27 72 749 4437 kept from the public promo graphic.</p>
       </div>
       <div className="heroVisual">
@@ -57,8 +60,8 @@ function App(){return <>
     </section>
 
     <section id="contact" className="contact">
-      <div><p className="eyebrow"><span></span>Contact demo</p><h2>Turn Facebook visitors into quote requests.</h2><p>Phone number pulled from the public Facebook promotional graphic. Location and trading hours still need confirmation.</p><ul><li><Phone/> +27 72 749 4437</li><li><Mail/> Email to confirm</li><li><MapPin/> Location to confirm</li></ul></div>
-      <form onSubmit={e=>e.preventDefault()}><input placeholder="Name"/><input placeholder="Phone / WhatsApp"/><input placeholder="Vehicle / engine"/><select defaultValue=""><option value="" disabled>Problem type</option><option>Injector testing</option><option>Injector cleaning</option><option>Injector repair</option><option>Diesel diagnostic</option></select><textarea placeholder="Describe the symptoms"></textarea><button>Send enquiry</button></form>
+      <div><p className="eyebrow"><span></span>Contact demo</p><h2>Turn Facebook visitors into quote requests.</h2><p>Phone number pulled from the public Facebook promotional graphic. Location and trading hours still need confirmation.</p><ul><li><Phone/> <a href={whatsappUrl} target="_blank" rel="noreferrer">+27 72 749 4437</a></li><li><Mail/> Email to confirm</li><li><MapPin/> Location to confirm</li></ul></div>
+      <form onSubmit={e=>e.preventDefault()}><input placeholder="Name"/><input placeholder="Phone / WhatsApp"/><input placeholder="Vehicle / engine"/><select defaultValue=""><option value="" disabled>Problem type</option><option>Injector testing</option><option>Injector cleaning</option><option>Injector repair</option><option>Diesel diagnostic</option></select><textarea placeholder="Describe the symptoms"></textarea><button onClick={() => window.open(whatsappUrl, '_blank', 'noopener,noreferrer')}>Send enquiry on WhatsApp</button></form>
     </section>
   </main>
   <footer><b>Max Diesel Fuel Injector Specialist</b><span>Demo based on public Facebook page: facebook.com/556718934202583</span></footer>
