@@ -65,7 +65,7 @@ function App(){return <>
       <form onSubmit={e=>e.preventDefault()}><input placeholder="Name"/><input placeholder="Phone / WhatsApp"/><input placeholder="Vehicle / engine"/><select defaultValue=""><option value="" disabled>Problem type</option><option>Injector testing</option><option>Injector cleaning</option><option>Injector repair</option><option>Diesel diagnostic</option></select><textarea placeholder="Describe the symptoms"></textarea><button onClick={() => window.open(whatsappUrl, '_blank', 'noopener,noreferrer')}>Send enquiry on WhatsApp</button></form>
     </section>
   </main>
-  <footer><b>Max Diesel Fuel Injector Specialist</b><span>Demo based on public Facebook page: facebook.com/556718934202583</span></footer>
+  <footer><b>Max Diesel Fuel Injector Specialist</b><span>Demo based on public Facebook page: facebook.com/556718934202583 · <a href="privacy.html">Privacy Policy</a></span></footer>
 </>}
 
 createRoot(document.getElementById('root')).render(<App/>);
